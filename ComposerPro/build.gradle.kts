@@ -30,7 +30,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
 }
 
@@ -42,10 +42,12 @@ afterEvaluate {
                 groupId = "com.github.legendxop"
                 artifactId = "composer-pro"
                 version = "1.0.0"
+                artifact("$buildDir/outputs/aar/composer-pro-release.aar")
             }
         }
     }
 }
+
 
 dependencies {
     implementation(platform(libs.androidx.compose.bom))
