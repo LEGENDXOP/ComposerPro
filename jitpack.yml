@@ -1,5 +1,4 @@
 jdk:
-  - openjdk11
-
+  - openjdk17
 before_install:
   - if [ -f ./scripts/prepareJitpackEnvironment.sh ]; then ./scripts/prepareJitpackEnvironment.sh; fi
