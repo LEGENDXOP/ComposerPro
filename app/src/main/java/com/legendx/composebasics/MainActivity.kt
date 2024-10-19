@@ -14,6 +14,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.legendx.composebasics.ui.theme.ComposeBasicsTheme
+import com.legendx.composerpro.customButtons.CustomButton
+import com.legendx.composerpro.customButtons.CustomElevatedButton
+import com.legendx.composerpro.customButtons.CustomOutlinedButton
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +32,14 @@ class MainActivity : ComponentActivity() {
                         Greeting(
                             name = "Android"
                         )
-
+                        CustomButton(
+                            onClick = { /*This is mandatory*/ },
+                            onDoubleClick = { /*This is optional*/ },
+                            onLongClick = { /*This is optional*/ },
+                            haptics = true, // This is optional and is set to false by default
+                        ){
+                            Text("Custom Button")
+                        }
                     }
                 }
             }
