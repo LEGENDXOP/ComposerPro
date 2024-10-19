@@ -15,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.legendx.composebasics.ui.theme.ComposeBasicsTheme
+import com.legendx.composerpro.customButtons.CustomButton
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +29,12 @@ class MainActivity : ComponentActivity() {
                         Greeting(
                             name = "Android"
                         )
+                        CustomButton(
+                            onClick = {}
+                        ){
+                            Text("Custom Button")
+                        }
+
                     }
                 }
             }
