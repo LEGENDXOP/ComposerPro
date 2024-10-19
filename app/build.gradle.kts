@@ -40,7 +40,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":ComposerPro"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
