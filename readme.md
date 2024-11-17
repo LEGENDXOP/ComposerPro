@@ -55,7 +55,7 @@ maven(url = "https://jitpack.io")
 In your app-level **`build.gradle.kts`**, add the following dependency:
 
 ```kotlin
-implementation("com.github.LEGENDXOP:ComposerPro:1.0.0")
+implementation("com.github.LEGENDXOP:ComposerPro:1.0.1")
 ```
 
 Sync your project after adding the dependency.
